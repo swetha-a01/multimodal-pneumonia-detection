@@ -1,0 +1,32 @@
+Checkpoint: D:\courseProject\deep learning\multimodal\Pneumonia_IU_Complete_Starter\models\pneumonia_resnet18.pt
+Dataset: D:\courseProject\deep learning\pneumonia_xray_500_complete\pneumonia_xray_500\data\raw\chest_xray
+Device: cpu
+
+Dataset counts:
+train: 400 images
+  NORMAL: 200
+  PNEUMONIA: 200
+test: 100 images
+  NORMAL: 50
+  PNEUMONIA: 50
+
+Test images: 100
+Accuracy: 0.710000
+Precision (PNEUMONIA): 0.640000
+Recall (PNEUMONIA): 0.960000
+F1 (PNEUMONIA): 0.768000
+ROC-AUC: 0.9388000000000001
+
+              precision    recall  f1-score   support
+
+      NORMAL     0.9200    0.4600    0.6133        50
+   PNEUMONIA     0.6400    0.9600    0.7680        50
+
+    accuracy                         0.7100       100
+   macro avg     0.7800    0.7100    0.6907       100
+weighted avg     0.7800    0.7100    0.6907       100
+
+Confusion matrix (rows=actual, columns=predicted):
+Class order: ['NORMAL', 'PNEUMONIA']
+[[23 27]
+ [ 2 48]]
